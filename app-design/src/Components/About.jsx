@@ -5,8 +5,8 @@ import googleBtn from '../Assets/images/google-btn.png';
 
 const About = () => {
   return (
-    <div id="About" className="p-4">
-      <h1 className="text-4xl font-bold uppercase text-pink-700">About the App</h1>
+    <div id="About" className="p-4 mt-8">
+      <h1 className="text-6xl font-bold uppercase text-pink-700">About the App</h1>
       <div className="flex flex-col mt-8 md:flex-row">
         <div className="w-full md:w-1/2">
           <img src={aboutImg} alt="About" className="w-full" />

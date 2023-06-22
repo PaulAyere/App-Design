@@ -8,10 +8,10 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-10 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-gray-700 text-sm py-4 dark:bg-white">
+    <header className="sticky top-0 z-10 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-gray-800 text-sm py-4 dark:bg-white">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
         <div className="flex items-center justify-between">
-          <a className="flex-none text-xl font-semibold text-white dark:text-gray-800" href="#">Brand</a>
+          <a className="flex-none text-2xl font-semibold text-white dark:text-gray-800" href="#">Logo</a>
           <div className="sm:hidden">
             <button
               type="button"

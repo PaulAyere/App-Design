@@ -3,7 +3,7 @@ import React from 'react';
 const Features = () => {
   return (
     <div id="Features" className="p-4 mt-20">
-      <h1 className="text-4xl font-bold uppercase text-pink-500 mb-8 text-center">App Features</h1>
+      <h1 className="text-6xl font-bold uppercase text-pink-500 mb-8 text-center">App Features</h1>
       <div className="flex flex-wrap justify-center">
         <div className="w-full sm:w-auto md:w-1/2 lg:w-1/4 xl:w-1/4 bg-pink-100 rounded border p-8 m-2 hover:bg-red-400 hover:text-white">
           <i className="fas fa-magic text-6xl mb-6 text-rose-700  hover:text-white"></i>
