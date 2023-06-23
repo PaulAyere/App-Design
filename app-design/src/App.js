@@ -4,6 +4,7 @@ import Features from './Components/Features';
 import About from './Components/About';
 import Usage from './Components/Usage';
 import Review from './Components/Reviews';
+import Pricing from './Components/Pricing';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About/>
       <Usage/>
       <Review/>
+      <Pricing/>
     </div>
   );
 }

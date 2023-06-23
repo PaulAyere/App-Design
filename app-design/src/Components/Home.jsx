@@ -29,25 +29,20 @@ const Home = () => {
   return (
     <div id="Home" className="relative h-screen">
       <div
-        className="absolute inset-0 w-full h-full bg-cover"
+        className="absolute inset-0 z-0 w-full h-full bg-center bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-begin">
-        <div className="text-white text-6xl font-bold mb-4">
-          App Landing Page
-        </div>
-        <p className="text-white text-xl mb-8">
-          Description of your app goes here...
-        </p>
-        <button className="text-white py-1 px-6 rounded-lg bg-gradient-to-r from-red-700 to-rose-300 hover:scale-110 transform-gpu duration-300">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white">
+        <div className="text-6xl font-bold mb-4">App Landing Page</div>
+        <p className="text-xl mb-8">Description of your app goes here...</p>
+        <button className="py-1 px-6 rounded-lg bg-gradient-to-r from-red-700 to-rose-300 hover:scale-110 transform-gpu duration-300 text-white">
           Call to Action
         </button>
       </div>
-      
-     
-      <div className="absolute top-0 left-0 w-full h-full">       
+
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
         <Swiper {...swiperParams}>
           {images.map((image, index) => (
             <SwiperSlide key={index}>
@@ -58,8 +53,7 @@ const Home = () => {
           ))}
         </Swiper>
       </div>
-      </div>
-       
+    </div>
   );
 };
 
