@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../Assets/images/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,10 +9,12 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-10 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-gray-800 text-sm py-4 dark:bg-white">
+    <header className="sticky top-0 z-10 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-gray-900 text-sm py-4 dark:bg-white">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
         <div className="flex items-center justify-between">
-          <a className="flex-none text-2xl font-semibold text-white dark:text-gray-800" href="#">Logo</a>
+        <a className="flex-none" href="#">
+            <img className="h-12" src={logo} alt="Logo" />
+          </a>
           <div className="sm:hidden">
             <button
               type="button"
@@ -33,13 +36,13 @@ const Header = () => {
           className={`hs-collapse transition-all duration-300 basis-full grow sm:block ${isMenuOpen ? 'block' : 'hidden'}`}
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-            <a className="font-medium text-white hover:text-rose-800 text-lg" href="#">Home</a>
-            <a className="font-medium text-white hover:text-rose-800 text-lg" href="#">Features</a>
-            <a className="font-medium text-white hover:text-rose-800 text-lg" href="#">About</a>
-            <a className="font-medium text-white hover:text-rose-800 text-lg" href="#">Usage</a>
-            <a className="font-medium text-white hover:text-rose-800 text-lg" href="#">Review</a>
-            <a className="font-medium text-white hover:text-rose-800 text-lg" href="#">Pricing</a>
-            <a className="font-medium text-white hover:text-rose-800 text-lg" href="#">Contact</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Home</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Features</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">About</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Usage</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Review</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Pricing</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Contact</a>
           </div>
         </div>
       </nav>

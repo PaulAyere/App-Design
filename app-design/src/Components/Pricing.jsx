@@ -3,7 +3,8 @@ import React from 'react';
 const Pricing = () => {
   return (
     <div id="pricing" className="p-4 mt-8">
-      <h1 className="text-6xl font-bold uppercase text-pink-500 mb-8 text-center">our pricing plans</h1>
+      <h1 className="text-6xl font-bold uppercase bg-gradient-to-r from-pink-500 to-red-300 text-transparent bg-clip-text mb-8 text-center">our pricing plans</h1>
+
       <div className="flex flex-col md:flex-row mt-8">
         
       <div className="flex-1 mx-4">
@@ -20,7 +21,9 @@ const Pricing = () => {
                 <p>email support</p>
             </div>
             <hr className="border-pink-700 my-4" />
-            <button className="bg-pink-700 text-white px-4 py-1 rounded">select plan</button>
+            <button className="py-1 px-8 mb-4 rounded-2xl bg-gradient-to-r from-pink-500 to-red-300 hover:scale-110 transform-gpu duration-300 text-white">
+          Select plan
+        </button>
           </div>
         </div>
 
@@ -38,7 +41,9 @@ const Pricing = () => {
                 <p>email support</p>
             </div>
             <hr className="border-pink-700 my-4" />
-            <button className="bg-pink-700 text-white px-4 py-1 rounded">select plan</button>
+            <button className="py-1 px-8 mb-4 rounded-2xl bg-gradient-to-r from-pink-500 to-red-300 hover:scale-110 transform-gpu duration-300 text-white">
+          Select plan
+        </button>
           </div>
         </div>
 
@@ -56,7 +61,9 @@ const Pricing = () => {
                 <p>email support</p>
             </div>
             <hr className="border-pink-700 my-4" />
-            <button className="bg-pink-700 text-white px-4 py-1 rounded">select plan</button>
+            <button className="py-1 px-8 mb-4 rounded-2xl bg-gradient-to-r from-pink-500 to-red-300 hover:scale-110 transform-gpu duration-300 text-white">
+          Select plan
+        </button>
           </div>
         </div>
       </div>
