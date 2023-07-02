@@ -31,7 +31,7 @@ const Home = () => {
       <div className="relative z-0 overflow-hidden flex items-center justify-center mt-8">
         <Swiper
           loop={true}
-          spaceBetween={0}
+          spaceBetween={10}
           slidesPerView={3}
           autoplay={{ delay: 1000 }}
           className="w-full"
