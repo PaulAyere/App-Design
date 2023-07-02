@@ -3,7 +3,8 @@ import React from 'react';
 const Contact = () => {
   return (
     <div id="contact" className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-      <h1 className="text-6xl font-bold uppercase bg-gradient-to-r from-pink-500 to-red-300 text-transparent bg-clip-text mb-8 text-center">get in touch</h1>
+      <h1 className="text-6xl font-bold uppercase bg-
+       text-transparent bg-clip-text mb-8 text-center">get in touch</h1>
 
       <div className="w-3/4 bg-white rounded-lg mt-8 p-8">
         <form>

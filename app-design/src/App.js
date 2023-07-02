@@ -6,6 +6,7 @@ import Usage from './Components/Usage';
 import Review from './Components/Reviews';
 import Pricing from './Components/Pricing';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Review/>
       <Pricing/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

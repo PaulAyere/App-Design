@@ -12,7 +12,7 @@ const Header = () => {
     <header className="sticky top-0 z-10 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-gray-900 text-sm py-4 dark:bg-white">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
         <div className="flex items-center justify-between">
-        <a className="flex-none" href="#">
+        <a className="flex-none">
             <img className="h-12" src={logo} alt="Logo" />
           </a>
           <div className="sm:hidden">
@@ -36,13 +36,13 @@ const Header = () => {
           className={`hs-collapse transition-all duration-300 basis-full grow sm:block ${isMenuOpen ? 'block' : 'hidden'}`}
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Home</a>
-            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Features</a>
-            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">About</a>
-            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Usage</a>
-            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Review</a>
-            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Pricing</a>
-            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#">Contact</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#Home">Home</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#Features">Features</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#About">About</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#usage">Usage</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#review">Review</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#pricing">Pricing</a>
+            <a className="font-medium text-white hover:text-pink-500 text-lg" href="#contact">Contact</a>
           </div>
         </div>
       </nav>

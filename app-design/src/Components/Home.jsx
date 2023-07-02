@@ -1,4 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+
 import backgroundImage from '../Assets/images/home-bg.jpg';
 import shot01 from '../Assets/images/shot-01.jpg';
 import shot02 from '../Assets/images/shot-02.jpg';
@@ -8,21 +11,6 @@ import shot05 from '../Assets/images/shot-05.jpg';
 
 const Home = () => {
   const images = [shot01, shot02, shot03, shot04, shot05];
-  const sliderRef = useRef(null);
-  let currentIndex = 0;
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (sliderRef.current) {
-        currentIndex = (currentIndex + 1) % images.length;
-        sliderRef.current.style.transform = `translateX(calc(-${currentIndex * (100 / images.length)}%))`;
-      }
-    }, 5000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
 
   return (
     <div id="Home" className="relative min-h-screen">
@@ -41,23 +29,19 @@ const Home = () => {
       </div>
 
       <div className="relative z-0 overflow-hidden flex items-center justify-center mt-8">
-        <div
-          ref={sliderRef}
-          className="w-full flex transition-transform duration-1000"
+        <Swiper
+          loop={true}
+          spaceBetween={0}
+          slidesPerView={3}
+          autoplay={{ delay: 1000 }}
+          className="w-full"
         >
           {images.map((image, index) => (
-            <div
-              key={index}
-              className="w-1/5"
-            >
-              <img
-                src={image}
-                alt={`Slide ${index + 1}`}
-                className="w-full object-cover"
-              />
-            </div>
+            <SwiperSlide key={index}>
+              <img src={image} alt={`Slide ${index + 1}`} className="w-full object-cover" />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </div>
   );
